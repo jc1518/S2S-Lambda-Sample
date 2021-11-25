@@ -5,9 +5,13 @@
 
 "use strict";
 
+const dateTime = new Date();
+
 async function handler(event, context) {
   return {
-    body: '"Hello, this Lambda function is deployed by S2S!"',
+    body: {
+      data: `Hello, this Lambda function is deployed by S2S! \nCurrent time is ${dateTime}`,
+    },
     statusCode: 200,
   };
 }
