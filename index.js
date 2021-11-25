@@ -12,6 +12,7 @@ async function handler(event, context) {
   return {
     body: demoPage,
     statusCode: 200,
+    headers: { "Content-Type": "text/html" },
   };
 }
 exports.handler = handler;
