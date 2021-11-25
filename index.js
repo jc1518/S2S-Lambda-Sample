@@ -6,7 +6,7 @@
 "use strict";
 
 const demoPage =
-  '<html><body><h2>This Lambda is created by S2S!</h2><p id="demo"></p><script>const d = new Date();document.getElementById("demo").innerHTML = d;</script></body></html>';
+  '<html><body><h2>This Lambda function is created by S2S!</h2><p id="demo"></p><script>const d = new Date();document.getElementById("demo").innerHTML = d;</script></body></html>';
 
 async function handler(event, context) {
   return {
