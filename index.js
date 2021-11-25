@@ -5,13 +5,12 @@
 
 "use strict";
 
-const dateTime = new Date();
+const demoPage =
+  '<html><body><h2>This Lambda is created by S2S!</h2><p id="demo"></p><script>const d = new Date();document.getElementById("demo").innerHTML = d;</script></body></html>';
 
 async function handler(event, context) {
   return {
-    body: {
-      data: `Hello, this Lambda function is deployed by S2S! \nCurrent time is ${dateTime}`,
-    },
+    body: demoPage,
     statusCode: 200,
   };
 }
